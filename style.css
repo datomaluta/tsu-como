@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #dcdcdc;
+  padding: 0 100px;
+  color: rgb(38, 38, 38);
+}
+
+.parent-container {
+  margin-top: 100px;
+  display: flex;
+  gap: 40px;
+}
+
+.info-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  background-color: #fff;
+  padding-bottom: 50px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.info-box-backgrond-image {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(72, 72, 72, 0.273),
+      rgba(0, 0, 0, 0.865)
+    ),
+    url("https://foodtank.com/wp-content/uploads/2021/07/alfons-morales-YLSwjSy7stw-unsplash.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.info-box-backgrond-image-text-container {
+  color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.info-box-backgrond-image-text-container h1 {
+  letter-spacing: 2px;
+}
+
+.info-box-backgrond-image-text-container p {
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.info-box-text {
+  padding: 0 30px;
+  margin-top: 30px;
+  /* line-height: 25px; */
+}
+
+.aside-container {
+  width: 25%;
+  /* background: yellow; */
+}
+
+.about-faculty-list-container {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.about-faculty-list-container h3 {
+  padding-bottom: 20px;
+  border-bottom: solid 1px rgb(198, 198, 198);
+}
+
+.faculty-info-list {
+  list-style: none;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faculty-info-list li {
+  font-weight: bold;
+}
+
+.yellow-dot {
+  color: rgb(255, 196, 0);
+  margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding: 0 20px;
+  }
+  .info-box-backgrond-image {
+    height: 200px;
+  }
+  .info-box-wrapper {
+    width: 100%;
+  }
+  .aside-container {
+    display: none;
+  }
+  .info-box-backgrond-image-text-container {
+    left: 10px;
+  }
+  .info-box-backgrond-image-text-container h1 {
+    font-size: 20px;
+  }
+}
